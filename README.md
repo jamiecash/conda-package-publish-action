@@ -2,6 +2,9 @@
 
 A Github Action to publish your software package to an Anaconda repository.
 
+Forked from maxibor/conda-package-publish-action. Updated to support 
+pyproject.toml build files with hatchling build backend.
+
 ### Example workflow to publish to conda every time you make a new release
 
 ```yaml
@@ -43,8 +46,10 @@ jobs:
 
 ### ANACONDA_TOKEN
 
-1. Get an Anaconda token (with read and write API access) at `anaconda.org/USERNAME/settings/access` 
+1. Get an Anaconda token (with read and write API access) at 
+`anaconda.org/USERNAME/settings/access` 
 2. Add it to the Secrets of the Github repository as `ANACONDA_TOKEN`
 
 ### Build Channels
-By Default, this Github Action will search for conda build dependancies (on top of the standard channels) in `conda-forge` and `bioconda`
+By Default, this Github Action will search for conda build dependancies (on 
+top of the standard channels) in `conda-forge` and `bioconda`
