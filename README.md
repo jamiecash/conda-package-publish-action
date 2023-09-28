@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: publish-to-conda
-      uses: maxibor/conda-package-publish-action@v1.1
+      uses: jamiecash/conda-package-publish-action@master
       with:
         subDir: 'conda'
         AnacondaToken: ${{ secrets.ANACONDA_TOKEN }}
